@@ -1,0 +1,117 @@
+.container {
+    display: grid;
+    position: fixed;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-family: 'Roboto';
+}
+.header {
+    grid-column: 1/-1;
+    grid-row: 1/4;
+    background-color: rgb(77, 143, 126);
+    padding: 10px;
+}
+.title{
+    display: flex;
+    justify-content: center;
+
+}
+.nav{
+    display: flex; 
+    justify-content: flex-end;
+}
+.navdesign{
+    background-color: rgb(77, 143, 126);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+.navdesign:hover{
+    background-color: rgb(20, 110, 88);
+}
+.dropbttn{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+.dropbttn:hover{
+    background-color: rgb(20, 110, 88);
+}
+
+.dropdown-content{
+    display: none;
+    position: fixed;
+    background-color: rgb(255, 225, 94);
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+}
+.dropdown:hover .dropdown-content {display: block;}
+img {
+    height:50px;
+}
+.body {
+    grid-column: 1/-1;
+    grid-row: 4/9;
+    background-color: rgb(224, 149, 79);
+    display: flex; 
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+
+.logo{
+    padding: .5em;
+}
+
+.footer {
+    grid-column: 1/-1;
+    grid-row: 9/-1;
+    background-color: rgb(255, 225, 94);
+    text-align: center;
+}
+.first {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    margin: 5em;
+}
+.second {
+    width: 5em;
+    text-align: center;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+.piano{
+    width: 300%;
+    height: 300%;
+}
+
+h2{
+    margin: 0;
+}
+.more{
+    background-color: rgb(255, 255, 255); 
+    padding: 10px; 
+    margin: 0px;
+    border-radius: 5px;
+}
+.more:hover {
+    background-color: rgb(168,168,168);
+}
+.form {
+    display: flex; 
+    flex-direction: column;
+    padding: 20px; 
+    background-color: rgb(255, 225, 94);
+    justify-content: center;
+    font-family: 'Roboto';
+    text-align: center;
+}
