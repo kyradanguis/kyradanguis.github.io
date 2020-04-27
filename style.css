@@ -44,7 +44,7 @@
 
 .dropdown-content{
     display: none;
-    position: fixed;
+    position: relative;
     background-color: rgb(255, 225, 94);
     padding: 5px;
     margin: 5px;
@@ -64,7 +64,9 @@ img {
 
 }
 
-
+h1 {
+    margin-bottom:-1em;
+}
 .logo{
     padding: .5em;
 }
@@ -79,7 +81,7 @@ img {
     display: flex; 
     flex-direction: column;
     align-items: center;
-    margin: 5em;
+    margin: 1em;
 }
 .second {
     width: 5em;
@@ -109,9 +111,29 @@ h2{
 .form {
     display: flex; 
     flex-direction: column;
-    padding: 20px; 
+    padding: .5em 2em;
     background-color: rgb(255, 225, 94);
     justify-content: center;
     font-family: 'Roboto';
     text-align: center;
+}
+
+input{
+    width:50%;
+    align-self: center;
+    margin-top:.25em;
+}
+
+@media screen and (min-width: 600px) {
+ input{
+        width:30%;
+        align-self: center;
+        margin-top:.25em;
+    }
+
+.submit-button {
+    width:25%;
+}
+
+
 }
